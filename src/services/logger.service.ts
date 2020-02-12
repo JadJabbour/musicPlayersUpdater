@@ -17,6 +17,8 @@ export default class Logging {
             dateFormat: 'YYYY.MM.DD',
             ...opts
         });
+
+        this.logger.setLevel('all');
     }
 
 }

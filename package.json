@@ -1,7 +1,7 @@
 {
-  "name": "nodetsjest",
+  "name": "@jadjabbour/music-players-updater",
   "version": "1.0.0",
-  "description": "",
+  "description": "updates component-based music players based on CSV input ",
   "main": "./dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn src/index.ts",
@@ -9,8 +9,8 @@
     "test": "jest",
     "docs": "typedoc --out docs src"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jad A. Jabbour",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.1",
@@ -21,6 +21,9 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "csv-reader": "^1.0.6",
+    "lodash": "^4.17.15",
     "simple-node-logger": "^18.12.24"
   }
 }
