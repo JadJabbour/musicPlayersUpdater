@@ -1,5 +1,4 @@
 import fetch from './mock-fetch.service';
-import FetchResponse from '../interfaces/mock-fetch.interface'
 
 export default class UpdateAPI {
 
@@ -11,11 +10,26 @@ export default class UpdateAPI {
         this.authToken = authToken;
     }
 
-    private parse(data: any): Promise<any> {
-
+    private parse(data: any): any {
+        if(data.statusCode){
+            throw new Error(JSON.stringify(data));
+        } else {
+            return data;
+        }
     }
 
-    public updateClient(clientId: string): Promise<any> {
-        return fetch().then((r: FetchResponse) => r.json()).then((data: any) => this.parse(data))
+    public updateClient(clientId: string, updateRequest: any): Promise<any> {
+        return fetch(
+                this.baseURL + '/profiles/clientId:' + clientId, 
+                { 
+                    method: 'PUT', 
+                    body: JSON.stringify(updateRequest), 
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'x-client-id': clientId,
+                        'x-authentication-token': this.authToken
+                    }
+                }
+            ).then((r: any) => r.json()).then((data: any) => this.parse(data))
     }
 }

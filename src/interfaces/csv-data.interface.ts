@@ -3,7 +3,6 @@
  */
 export default interface CSVData {
     mac_addresses: string,
-    id1: string,
-    id2: string,
-    id3: string
+    /** we only care about the mac address at this point */
+    [propName: string]: any
 }
