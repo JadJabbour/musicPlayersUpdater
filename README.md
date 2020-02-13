@@ -1,4 +1,4 @@
-# Music Player Component Updated
+# Music Player Component Updater
 
 ## -- Introduction
 
