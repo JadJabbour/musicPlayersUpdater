@@ -26,7 +26,9 @@ export default class CSVReader {
      * @param path the path to the csv file
      */
     constructor(path: string) {
-        try{
+            if(!fs.existsSync(path)){
+                throw new Error('file does not exist');
+            }
             this.csvReader = new CsvReadableStream({ 
                 skipHeader: true, 
                 asObject: true, 
@@ -36,9 +38,6 @@ export default class CSVReader {
             });
             this.path = path;
             this.inputStream = fs.createReadStream(this.path, 'utf8');
-        } catch (e) {
-            throw new Error('no such file or directory');
-        }
     }
 
     /**

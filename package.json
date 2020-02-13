@@ -5,11 +5,11 @@
   "main": "./dist/main.js",
   "bin": "./dist/index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/index.ts --file csv/input.csv",
+    "dev": "ts-node-dev --respawn src/index.ts --file csv/input2.csv",
     "build": "tsc",
     "test": "jest --outputFile=testResults.json --json",
     "docs": "typedoc --out docs src",
-    "package": "pkg ./package.json --target node12 --out-path bin"
+    "package": "tsc && pkg ./package.json --target node12 --out-path bin"
   },
   "author": "Jad A. Jabbour",
   "license": "MIT",

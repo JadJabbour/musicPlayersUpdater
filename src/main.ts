@@ -10,7 +10,7 @@ import Configuration from './config';
 import { merge, cloneDeep } from 'lodash';
 
 /**
- * The main process state
+ * The main process state (ideally this would be immutable)
  */
 let state: ProcessStatus = {
     file: {
@@ -48,9 +48,10 @@ const main = (csvPath: string, logger: any): Promise<ProcessStatus> => {
         /** Mocking a call to auth token server (returns random str of 13 chars) */
         const authToken = (() => Math.random().toString(36).substring(13))();
 
-        /** initialising empty lists for failed and success updates */
+        /** initialising empty lists for erros, failed aupdates nd success updates */
         const failedUpdates: { clientId: string, error: any }[] = [];
         const successUpdates: { clientId: string, response: any }[] = [];
+        const errors: { service: string, function: string, message: string, data: any }[] = [];
 
         /** Promise list to resolve in unison */
         const promiseList: Promise<any>[] = [];
@@ -102,26 +103,34 @@ const main = (csvPath: string, logger: any): Promise<ProcessStatus> => {
 
         /** start reading the CSV file supplying the reader with OnRow and OnEnd callback functions */
         reader.read((data: CSVData) => {
-            if(validMacAddress(data.mac_addresses)){
-                /** bundling the promises from API calls for Promise.all */
-                promiseList.push(
-                    updaterApi.updateClient(data.mac_addresses, preparePutData)
-                        .then(onUpdateSuccess(data.mac_addresses))
-                        .catch(onUpdateFailed(data.mac_addresses))
-                );
-            } else {
-                /** adding invalid mac addresses to failed updates list */
-                failedUpdates.push({
-                    clientId: data.mac_addresses,
-                    error: 'invalid mac address'
+            if(!data.mac_addresses){
+                errors.push({ 
+                    service: 'CSVReader', 
+                    function: 'read', 
+                    message: 'The expected object properly mac_addresses does not exist', 
+                    data: data 
                 });
+            } else {
+                if(validMacAddress(data.mac_addresses)){
+                    /** bundling the promises from API calls for Promise.all */
+                    promiseList.push(
+                        updaterApi.updateClient(data.mac_addresses, preparePutData)
+                            .then(onUpdateSuccess(data.mac_addresses))
+                            .catch(onUpdateFailed(data.mac_addresses))
+                    );
+                } else {
+                    /** adding invalid mac addresses to failed updates list */
+                    failedUpdates.push({
+                        clientId: data.mac_addresses,
+                        error: 'invalid mac address'
+                    });
+                }
             }
         }, 
         () => {
             /** updating state with failed and success updates lists on read end */
             Promise.all(promiseList).then(() => {
-                updateState({failedUpdates: failedUpdates});
-                updateState({successUpdates: successUpdates});
+                updateState({failedUpdates: failedUpdates, successUpdates: successUpdates, errors: errors});
                 /** resolving when all promises are satisfied and returning process state */
                 resolve(state);
             });

@@ -5,6 +5,14 @@ const onRow = (list: CSVData[]) => (data: CSVData) => list.push(data);
 
 describe('testing CSV Reader service', () => {
 
+    test('should throw an exception for x.csv (file does exist)', done => {
+        const t = () => {
+            const reader = new CSVReader('./csv/x.csv'); 
+        }
+        expect(t).toThrow(Error);
+        done();
+    });
+
     test('should read 16 rows from input.csv', done => {
         const reader = new CSVReader('./csv/input.csv'); 
         const list: CSVData[] = [];
