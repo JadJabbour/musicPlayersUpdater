@@ -48,7 +48,7 @@ const main = (csvPath: string, logger: any): Promise<ProcessStatus> => {
         /** Mocking a call to auth token server (returns random str of 13 chars) */
         const authToken = (() => Math.random().toString(36).substring(13))();
 
-        /** initialising empty lists for erros, failed aupdates nd success updates */
+        /** initialising empty lists for errors, failed updates and success updates */
         const failedUpdates: { clientId: string, error: any }[] = [];
         const successUpdates: { clientId: string, response: any }[] = [];
         const errors: { service: string, function: string, message: string, data: any }[] = [];

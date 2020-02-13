@@ -15,7 +15,7 @@ describe('testing main functionality', () => {
     })
   });  
   
-  test('should return ', done => {
+  test('should return errors for all records', done => {
     main('./csv/input1.csv', logging).then((data: ProcessStatus) => {
       if(data!.errors!.length < 13 ){
         fail('the error count does not match the expected');
