@@ -42,12 +42,13 @@ try{
         throw new Error('invalid or empty input file');
     }
 
-    /** Runs the auto-updated against the input CSV file */
-    runAutoUpdaterAndOutput(inputFile);
+    /** Runs the auto-updated against the input CSV file and exits process when all promises are resolved */
+    runAutoUpdaterAndOutput(inputFile).then(() => process.nextTick(() => process.exit()));
 } catch(e) {
     /** catch-all error logger */
     logging.logger.error(e);    
     console.log('An error has occured, please check the log files');
-}
 
-//  afa4ded61ae80f0356e881a03d8daac449a5d850
+    // exists process on error 
+    process.nextTick(() => process.exit())
+}

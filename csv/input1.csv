@@ -1,0 +1,14 @@
+bla_addresses, id1, id2, id3
+a1:bb:cc:dd:ee:ff, 1, 2, 3
+a2:bb:cc:dd:ee:ff, 1, 2, 3
+wrong mac address, 1, 2, 3
+a4:bb:cc:dd:ee:ff, 1, 2, 3
+a5:bb:cc:dd:ee:ff, 1, 2, 3
+a6:bb:cc:dd:ee:ff, 1, 2, 3
+a7:bb:cc:dd:ee:ff, 1, 2, 3
+a8:bb:cc:dd:ee:ff, 1, 2, 3
+b1:bb:cc:dd:ee:ff, 1, 2, 3
+b2:bb:cc:dd:ee:ff, 1, 2, 3
+b3:bb:cc:dd:ee:ff, 1, 2, 3
+b4:bb:cc:dd:ee:ff, 1, 2, 3
+b5:bb:cc:dd:ee:ff, 1, 2, 3
