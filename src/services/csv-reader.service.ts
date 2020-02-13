@@ -26,15 +26,19 @@ export default class CSVReader {
      * @param path the path to the csv file
      */
     constructor(path: string) {
-        this.csvReader = new CsvReadableStream({ 
-            skipHeader: true, 
-            asObject: true, 
-            parseNumbers: true, 
-            parseBooleans: true, 
-            trim: true 
-        });
-        this.path = path;
-        this.inputStream = fs.createReadStream(this.path, 'utf8');
+        try{
+            this.csvReader = new CsvReadableStream({ 
+                skipHeader: true, 
+                asObject: true, 
+                parseNumbers: true, 
+                parseBooleans: true, 
+                trim: true 
+            });
+            this.path = path;
+            this.inputStream = fs.createReadStream(this.path, 'utf8');
+        } catch (e) {
+            throw new Error('no such file or directory');
+        }
     }
 
     /**
