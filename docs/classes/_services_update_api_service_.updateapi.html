@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;main&quot; | @jadjabbour/music-players-updater</title>
+	<title>UpdateAPI | @jadjabbour/music-players-updater</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,193 +56,209 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_main_.html">&quot;main&quot;</a>
+					<a href="../modules/_services_update_api_service_.html">&quot;services/update-api.service&quot;</a>
+				</li>
+				<li>
+					<a href="_services_update_api_service_.updateapi.html">UpdateAPI</a>
 				</li>
 			</ul>
-			<h1>External module &quot;main&quot;</h1>
+			<h1>Class UpdateAPI</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Update api service</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">UpdateAPI</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Functions</h3>
+							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_main_.html#main" class="tsd-kind-icon">main</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_main_.html#updatestate" class="tsd-kind-icon">update<wbr>State</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_main_.html#validmacaddress" class="tsd-kind-icon">valid<wbr>Mac<wbr>Address</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_services_update_api_service_.updateapi.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Object literals</h3>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_main_.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_services_update_api_service_.updateapi.html#authtoken" class="tsd-kind-icon">auth<wbr>Token</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_services_update_api_service_.updateapi.html#baseurl" class="tsd-kind-icon">baseURL</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_services_update_api_service_.updateapi.html#parse" class="tsd-kind-icon">parse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_update_api_service_.updateapi.html#updateclient" class="tsd-kind-icon">update<wbr>Client</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="main" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> main</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">main<span class="tsd-signature-symbol">(</span>csvPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, logger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_interfaces_process_status_interface_.processstatus.html" class="tsd-signature-type">ProcessStatus</a><span class="tsd-signature-symbol">&gt;</span></li>
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>UpdateAPI<span class="tsd-signature-symbol">(</span>baseURL<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, authToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_services_update_api_service_.updateapi.html" class="tsd-signature-type">UpdateAPI</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/main.ts#L39">main.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/update-api.service.ts#L16">services/update-api.service.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>The main process</p>
+									<p>Creates an instance of update api.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>csvPath: <span class="tsd-signature-type">string</span></h5>
+									<h5>baseURL: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>the path to the CSV file</p>
+											<p>base URL of api to call</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5>logger: <span class="tsd-signature-type">any</span></h5>
+									<h5>authToken: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>the logger object injected from index</p>
+											<p>authentication token</p>
 										</div>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_interfaces_process_status_interface_.processstatus.html" class="tsd-signature-type">ProcessStatus</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="updatestate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> update<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>State<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_interfaces_process_status_interface_.processstatus.html" class="tsd-signature-type">ProcessStatus</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/main.ts#L26">main.ts:26</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Updates the process state by merging the input object</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>input: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>sub-state object to merge with state</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_interfaces_process_status_interface_.processstatus.html" class="tsd-signature-type">ProcessStatus</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="validmacaddress" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> valid<wbr>Mac<wbr>Address</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">valid<wbr>Mac<wbr>Address<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/main.ts#L32">main.ts:32</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Validates MAC address string format</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>MAC address to be validated as string</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_services_update_api_service_.updateapi.html" class="tsd-signature-type">UpdateAPI</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="state" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagLet">Let</span> state</h3>
-					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="authtoken" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> auth<wbr>Token</h3>
+					<div class="tsd-signature tsd-kind-icon">auth<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/main.ts#L15">main.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/update-api.service.ts#L16">services/update-api.service.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The main process state</p>
+							<p>Auth token of update api</p>
 						</div>
 					</div>
-					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="state.file" class="tsd-anchor"></a>
-						<h3>file</h3>
-						<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/main.ts#L16">main.ts:16</a></li>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="baseurl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> baseURL</h3>
+					<div class="tsd-signature tsd-kind-icon">baseURL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/update-api.service.ts#L11">services/update-api.service.ts:11</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Base url of update api</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="parse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/update-api.service.ts#L33">services/update-api.service.ts:33</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Parses update api response and throws exception  on error</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the response data from the api call</p>
+									</div>
+								</li>
 							</ul>
-						</aside>
-						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-							<a name="state.file.path" class="tsd-anchor"></a>
-							<h3>path</h3>
-							<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>parsed response data</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updateclient" class="tsd-anchor"></a>
+					<h3>update<wbr>Client</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Client<span class="tsd-signature-symbol">(</span>clientId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, updateRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/main.ts#L17">main.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/update-api.service.ts#L47">services/update-api.service.ts:47</a></li>
 								</ul>
 							</aside>
-						</section>
-						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-							<a name="state.file.valid_file" class="tsd-anchor"></a>
-							<h3>valid_<wbr>file</h3>
-							<div class="tsd-signature tsd-kind-icon">valid_<wbr>file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> = false</span></div>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/main.ts#L18">main.ts:18</a></li>
-								</ul>
-							</aside>
-						</section>
-					</section>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates client aoos via API</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>clientId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the client ID being updated</p>
+									</div>
+								</li>
+								<li>
+									<h5>updateRequest: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the update request data</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>client returned data wrapped in a Promise</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -253,51 +269,63 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_config_index_.html">&quot;config/index&quot;</a>
+						<a href="../modules/_config_index_.html">&quot;config/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_index_.html">&quot;index&quot;</a>
+						<a href="../modules/_index_.html">&quot;index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_interfaces_csv_data_interface_.html">&quot;interfaces/csv-<wbr>data.interface&quot;</a>
+						<a href="../modules/_interfaces_csv_data_interface_.html">&quot;interfaces/csv-<wbr>data.interface&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_interfaces_process_status_interface_.html">&quot;interfaces/process-<wbr>status.interface&quot;</a>
+						<a href="../modules/_interfaces_process_status_interface_.html">&quot;interfaces/process-<wbr>status.interface&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_interfaces_update_request_interface_.html">&quot;interfaces/update-<wbr>request.interface&quot;</a>
+						<a href="../modules/_interfaces_update_request_interface_.html">&quot;interfaces/update-<wbr>request.interface&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_main_.html">&quot;main&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_services_csv_reader_service_.html">&quot;services/csv-<wbr>reader.service&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_services_logger_service_.html">&quot;services/logger.service&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_services_mock_fetch_service_.html">&quot;services/mock-<wbr>fetch.service&quot;</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_main_.html">&quot;main&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_services_csv_reader_service_.html">&quot;services/csv-<wbr>reader.service&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_services_logger_service_.html">&quot;services/logger.service&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_services_mock_fetch_service_.html">&quot;services/mock-<wbr>fetch.service&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_services_update_api_service_.html">&quot;services/update-<wbr>api.service&quot;</a>
+						<a href="../modules/_services_update_api_service_.html">&quot;services/update-<wbr>api.service&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_main_.html#main" class="tsd-kind-icon">main</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_services_update_api_service_.updateapi.html" class="tsd-kind-icon">UpdateAPI</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_services_update_api_service_.updateapi.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_services_update_api_service_.updateapi.html#authtoken" class="tsd-kind-icon">auth<wbr>Token</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_services_update_api_service_.updateapi.html#baseurl" class="tsd-kind-icon">baseURL</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_services_update_api_service_.updateapi.html#parse" class="tsd-kind-icon">parse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_services_update_api_service_.updateapi.html#updateclient" class="tsd-kind-icon">update<wbr>Client</a>
+							</li>
+						</ul>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_main_.html#updatestate" class="tsd-kind-icon">update<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_main_.html#validmacaddress" class="tsd-kind-icon">valid<wbr>Mac<wbr>Address</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_main_.html#state" class="tsd-kind-icon">state</a>
-					</li>
+				</ul>
+				<ul class="after-current">
 				</ul>
 			</nav>
 		</div>

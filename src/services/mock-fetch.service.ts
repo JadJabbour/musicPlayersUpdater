@@ -44,7 +44,7 @@ const responses  = [
 ];
 
 /**
- * 90% success rate 10% random error
+ * 90% success rate 10% random error response
  */
 const randomizeResponse = (): any => Math.floor(Math.random() * 10) <= 9 ? responses[0] : responses[Math.floor(Math.random() * 4)];
 

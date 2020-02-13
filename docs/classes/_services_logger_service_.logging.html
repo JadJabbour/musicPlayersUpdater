@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ProcessStatus | nodetsjest</title>
+	<title>Logging | @jadjabbour/music-players-updater</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">nodetsjest</a>
+					<a href="../index.html" class="title">@jadjabbour/music-players-updater</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,24 +56,31 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_types_process_status_interface_.html">&quot;types/process-status.interface&quot;</a>
+					<a href="../modules/_services_logger_service_.html">&quot;services/logger.service&quot;</a>
 				</li>
 				<li>
-					<a href="_types_process_status_interface_.processstatus.html">ProcessStatus</a>
+					<a href="_services_logger_service_.logging.html">Logging</a>
 				</li>
 			</ul>
-			<h1>Interface ProcessStatus</h1>
+			<h1>Class Logging</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Logging service</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ProcessStatus</span>
+						<span class="target">Logging</span>
 					</li>
 				</ul>
 			</section>
@@ -82,57 +89,66 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_services_logger_service_.logging.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_process_status_interface_.processstatus.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_process_status_interface_.processstatus.html#failedupdates" class="tsd-kind-icon">failed<wbr>Updates</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_process_status_interface_.processstatus.html#file" class="tsd-kind-icon">file</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_services_logger_service_.logging.html#logger" class="tsd-kind-icon">logger</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Logging<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_services_logger_service_.logging.html" class="tsd-signature-type">Logging</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/logger.service.ts#L11">services/logger.service.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates an instance of Logging and initializes internal logger setting level to &#39;all&#39;</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_services_logger_service_.logging.html" class="tsd-signature-type">Logging</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> error</h3>
-					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>function<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>service<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="logger" class="tsd-anchor"></a>
+					<h3>logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types/process-status.interface.ts:3</li>
+							<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/logger.service.ts#L11">services/logger.service.ts:11</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="failedupdates" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> failed<wbr>Updates</h3>
-					<div class="tsd-signature tsd-kind-icon">failed<wbr>Updates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>clientId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in types/process-status.interface.ts:4</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="file" class="tsd-anchor"></a>
-					<h3>file</h3>
-					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>validCSV<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in types/process-status.interface.ts:2</li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>validCSV<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-							</li>
-						</ul>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>internal simple-node-logger object</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -144,13 +160,34 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_config_index_.html">&quot;config/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_index_.html">&quot;index&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_interfaces_csv_data_interface_.html">&quot;interfaces/csv-<wbr>data.interface&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_interfaces_process_status_interface_.html">&quot;interfaces/process-<wbr>status.interface&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_interfaces_update_request_interface_.html">&quot;interfaces/update-<wbr>request.interface&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_main_.html">&quot;main&quot;</a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_services_csv_reader_service_.html">&quot;services/csv-<wbr>reader.service&quot;</a>
+					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_types_process_status_interface_.html">&quot;types/process-<wbr>status.interface&quot;</a>
+						<a href="../modules/_services_logger_service_.html">&quot;services/logger.service&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_services_mock_fetch_service_.html">&quot;services/mock-<wbr>fetch.service&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_services_update_api_service_.html">&quot;services/update-<wbr>api.service&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -158,17 +195,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_types_process_status_interface_.processstatus.html" class="tsd-kind-icon">Process<wbr>Status</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_services_logger_service_.logging.html" class="tsd-kind-icon">Logging</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_process_status_interface_.processstatus.html#error" class="tsd-kind-icon">error</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_services_logger_service_.logging.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_process_status_interface_.processstatus.html#failedupdates" class="tsd-kind-icon">failed<wbr>Updates</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_process_status_interface_.processstatus.html#file" class="tsd-kind-icon">file</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_services_logger_service_.logging.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 						</ul>
 					</li>

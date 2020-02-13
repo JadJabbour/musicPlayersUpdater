@@ -2,9 +2,10 @@
   "name": "@jadjabbour/music-players-updater",
   "version": "1.0.0",
   "description": "updates component-based music players based on CSV input ",
-  "main": "./dist/index.js",
+  "main": "./dist/main.js",
+  "bin": "./dist/index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/index.ts",
+    "dev": "ts-node-dev --respawn src/index.ts --file csv/input.csv",
     "build": "tsc",
     "test": "jest",
     "docs": "typedoc --out docs src"
@@ -24,6 +25,7 @@
     "@types/lodash": "^4.14.149",
     "csv-reader": "^1.0.6",
     "lodash": "^4.17.15",
-    "simple-node-logger": "^18.12.24"
+    "simple-node-logger": "^18.12.24",
+    "yargs": "^15.1.0"
   }
 }

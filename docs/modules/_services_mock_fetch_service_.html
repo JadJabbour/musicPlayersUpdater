@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;index&quot; | @jadjabbour/music-players-updater</title>
+	<title>&quot;services/mock-fetch.service&quot; | @jadjabbour/music-players-updater</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_index_.html">&quot;index&quot;</a>
+					<a href="_services_mock_fetch_service_.html">&quot;services/mock-fetch.service&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;index&quot;</h1>
+			<h1>External module &quot;services/mock-fetch.service&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,15 +73,14 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#argv" class="tsd-kind-icon">argv</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#logging" class="tsd-kind-icon">logging</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_services_mock_fetch_service_.html#responses" class="tsd-kind-icon">responses</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#requiredinput" class="tsd-kind-icon">required<wbr>Input</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#runautoupdaterandoutput" class="tsd-kind-icon">run<wbr>Auto<wbr>Updater<wbr>And<wbr>Output</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_services_mock_fetch_service_.html#fetch" class="tsd-kind-icon">fetch</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_services_mock_fetch_service_.html#randomizeresponse" class="tsd-kind-icon">randomize<wbr>Response</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,94 +89,94 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="argv" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> argv</h3>
-					<div class="tsd-signature tsd-kind-icon">argv<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = yargs.option(&#x27;file&#x27;, {alias: &#x27;--file&#x27;,description: &#x27;Supply the CSV file path to be used&#x27;,type: &#x27;string&#x27;}).help().alias(&#x27;--help&#x27;, &#x27;-h&#x27;).argv</span></div>
+					<a name="responses" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> responses</h3>
+					<div class="tsd-signature tsd-kind-icon">responses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>profile<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>statusCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [{&quot;profile&quot;: {&quot;applications&quot;: [{&quot;applicationId&quot;: &quot;music_app&quot;,&quot;version&quot;: &quot;v1.4.10&quot;},{&quot;applicationId&quot;: &quot;diagnostic_app&quot;,&quot;version&quot;: &quot;v1.2.6&quot;},{&quot;applicationId&quot;: &quot;settings_app&quot;,&quot;version&quot;: &quot;v1.1.5&quot;}]}},{&quot;statusCode&quot;: 401,&quot;error&quot;: &quot;Unauthorized&quot;,&quot;message&quot;: &quot;invalid clientId or token supplied&quot;},{&quot;statusCode&quot;: 404,&quot;error&quot;: &quot;Not Found&quot;,&quot;message&quot;: &quot;profile of client does not exist&quot;},{&quot;statusCode&quot;: 409,&quot;error&quot;: &quot;Conflict&quot;,&quot;message&quot;: &quot;child \&quot;profile\&quot; fails because [child \&quot;applications\&quot; fails because [\&quot;applications\&quot; is required]]&quot;},{&quot;statusCode&quot;: 500,&quot;error&quot;: &quot;Internal Server Error&quot;,&quot;message&quot;: &quot;An internal server error occurred&quot;}]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/index.ts#L8">index.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/mock-fetch.service.ts#L5">services/mock-fetch.service.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>using yargs package to format input args</p>
-						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="logging" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> logging</h3>
-					<div class="tsd-signature tsd-kind-icon">logging<span class="tsd-signature-symbol">:</span> <a href="../classes/_services_logger_service_.logging.html" class="tsd-signature-type">Logging</a><span class="tsd-signature-symbol"> = new Logger()</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/index.ts#L21">index.ts:21</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Creates a new instance of logger to be used throughout the process</p>
+							<p>Mocked response list</p>
 						</div>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="requiredinput" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> required<wbr>Input</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">required<wbr>Input<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="fetch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> fetch</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>headers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>json<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/index.ts#L32">index.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/mock-fetch.service.ts#L56">services/mock-fetch.service.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Reads the required input (CSV file path) from process.argv</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="runautoupdaterandoutput" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> run<wbr>Auto<wbr>Updater<wbr>And<wbr>Output</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Auto<wbr>Updater<wbr>And<wbr>Output<span class="tsd-signature-symbol">(</span>csvPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_interfaces_process_status_interface_.processstatus.html" class="tsd-signature-type">ProcessStatus</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/index.ts#L27">index.ts:27</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Wrapper around the main process</p>
+									<p>mock http fetch function</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>csvPath: <span class="tsd-signature-type">string</span></h5>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
+											<p>url to mock call</p>
 										</div>
 									</div>
 								</li>
+								<li>
+									<h5>opts: <span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>headers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>mock request options</p>
+										</div>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>headers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_interfaces_process_status_interface_.processstatus.html" class="tsd-signature-type">ProcessStatus</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>json<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="randomizeresponse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> randomize<wbr>Response</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">randomize<wbr>Response<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/JadJabbour/musicPlayersUpdater/blob/30728c2/src/services/mock-fetch.service.ts#L49">services/mock-fetch.service.ts:49</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>90% success rate 10% random error response</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -192,7 +191,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_config_index_.html">&quot;config/index&quot;</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_index_.html">&quot;index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -213,7 +212,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_services_logger_service_.html">&quot;services/logger.service&quot;</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_services_mock_fetch_service_.html">&quot;services/mock-<wbr>fetch.service&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -224,16 +223,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_index_.html#argv" class="tsd-kind-icon">argv</a>
+						<a href="_services_mock_fetch_service_.html#responses" class="tsd-kind-icon">responses</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_index_.html#logging" class="tsd-kind-icon">logging</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_index_.html#requiredinput" class="tsd-kind-icon">required<wbr>Input</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_services_mock_fetch_service_.html#fetch" class="tsd-kind-icon">fetch</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_index_.html#runautoupdaterandoutput" class="tsd-kind-icon">run<wbr>Auto<wbr>Updater<wbr>And<wbr>Output</a>
+						<a href="_services_mock_fetch_service_.html#randomizeresponse" class="tsd-kind-icon">randomize<wbr>Response</a>
 					</li>
 				</ul>
 			</nav>
