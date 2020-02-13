@@ -7,7 +7,6 @@ import yargs  from 'yargs';
  */
 const argv = yargs
     .option('file', {
-        alias: '--file',
         description: 'Supply the CSV file path to be used',
         type: 'string'
     })
@@ -43,11 +42,14 @@ try{
     }
 
     /** Runs the auto-updated against the input CSV file and exits process when all promises are resolved */
-    runAutoUpdaterAndOutput(inputFile).then(() => process.nextTick(() => process.exit()));
+    runAutoUpdaterAndOutput(inputFile).then(() => process.nextTick(() => { 
+        console.log('Process has completed successfully\nPlease check log files for more details'); 
+        process.exit();
+    }));
 } catch(e) {
     /** catch-all error logger */
     logging.logger.error(e);    
-    console.log('An error has occured, please check the log files');
+    console.log('An error has occured\nPlease check the log files');
 
     // exists process on error 
     process.nextTick(() => process.exit())
